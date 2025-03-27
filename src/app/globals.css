@@ -14,13 +14,28 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #050d20;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    360deg,
+    #133178 0%, 
+    #0C1F4C 50%,   
+    #050d20 100%  
+  );
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-titulo {
+  font-family: var(--font-titulo), sans-serif;
+}
+
+.font-botao {
+  font-family: var(--font-botao), sans-serif;
 }
